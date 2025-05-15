@@ -47,10 +47,7 @@ void setup() {
 
 void loop() {
   encender(9);
-  lcd.setCursor(0, 0);
-  lcd.print("Empezar Juego?");
-  lcd.setCursor(0, 1);
-  lcd.print("(Y/N)");
+  mostrarTexto("Comenzar Juego","Y/N");
 
   if (Serial.available() > 0) {
     String opt = Serial.readStringUntil('\n'); 
